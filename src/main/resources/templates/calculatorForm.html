@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+<form id="opForm" method="post" action="/calculate">
+     <label id="fnum">first number:</label><br>
+      <input type="text" id="fNumber" name="fNum" value="2"><br>
+      <label id="snum">second number:</label><br>
+      <input type="text" id="sNumber" name="sNum" value="5"><br><br>
+
+    <label for="operators">choose an operator:</label>
+    <select id="operators" name="operatorList" form="opForm">
+          <option name="option" value="+">+</option>
+          <option name="option" value="-">-</option>
+          <option name="option" value="/">/</option>
+          <option name="option" value="*">*</option>
+        </select>
+    <br>
+      <input type="submit" value="calculate">
+    </form>
+</body>
+</html>
